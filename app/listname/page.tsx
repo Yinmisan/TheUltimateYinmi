@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-
-
-export default function lists() {
+export default function Lists() {
 
   var [step, setStep] = useState(0);
 
@@ -96,4 +94,3 @@ export default function lists() {
 
   )
 }
-// style={{ width: '400px', height: '400px' }}
