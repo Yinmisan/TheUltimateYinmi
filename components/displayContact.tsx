@@ -8,10 +8,10 @@ type contactTypes = {
   }
   
   export default function DisplayContact(props: { contactData: contactTypes[] }) {
-    return (
+    return (<>
       <div>
   
-        <div>
+       
           <table>
             <tbody>
             <tr>
@@ -19,7 +19,9 @@ type contactTypes = {
               <th>Email</th>
               <th>Phone</th>
               <th>Message</th>
-            </tr>
+            </tr> 
+            </tbody>
+            <tfoot>
             {props.contactData.map((item, index) => {
               return (
                 <tr  key={index}>
@@ -28,12 +30,14 @@ type contactTypes = {
                   <td>{item.phone}</td>
                   <td>{item.message}</td>
                 </tr>
-              )
+                )
             })}
-  </tbody>
+           </tfoot>
           </table>
-        </div>
+        
   
       </div>
+      
+      </>
     )
   }

@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <header id="header">
         <div className="inner">
           {/* Logo */}
-          <a href="/" className="logo">
+          <Link href="/" className="logo">
             <span className="symbol">
               <Image
                width={500}
@@ -17,12 +18,12 @@ export default function Home() {
                src="images/logo.svg" alt="logo" />
             </span>
             <span className="title">Main</span>
-          </a>
+          </Link>
           {/* Nav */}
           <nav>
             <ul>
               <li>
-                <a href="#menu">Menu</a>
+                <Link href="menu">Menu</Link>
               </li>
             </ul>
           </nav>
@@ -33,19 +34,19 @@ export default function Home() {
         <h2>Menu</h2>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="generic">Ipsum veroeros</a>
+            <Link href="generic">Ipsum veroeros</Link>
           </li>
           <li>
-            <a href="generic">Tempus etiam</a>
+            <Link href="generic">Tempus etiam</Link>
           </li>
           <li>
-            <a href="generic">Consequat dolor</a>
+            <Link href="generic">Consequat dolor</Link>
           </li>
           <li>
-            <a href="elements">Elements</a>
+            <Link href="elements">Elements</Link>
           </li>
         </ul>
       </nav>
@@ -56,11 +57,11 @@ export default function Home() {
             <h1>
               The Ultimate Yinmi
               <br />
-              A Project by <a href="https://github.com/Yinmisan">Yinmisan</a>.
+                 a project by <Link href="https://github.com/Yinmisan">Yinmisan</Link>.
             </h1>
-            <p>
-              Here i test diffrent things i found for next.js
-            </p>
+            <blockquote>
+             here i test diffrent things on a next.js app
+            </blockquote>
           </header>
           <section className="tiles">
             <article className="style1">
@@ -70,14 +71,14 @@ export default function Home() {
                 height={500}
                 src="/images/pic01.gif" alt="" />
               </span>
-              <a href="contact">
+              <Link href="contact">
                 <h2>contact form</h2>
                 <div className="content">
                   <p>
                     this is a contact form.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style2">
               <span className="image">
@@ -86,14 +87,14 @@ export default function Home() {
                 height={500}
                 src="/images/pic02.gif" alt="" />
               </span>
-              <a href="listname">
+              <Link href="listname">
                 <h2>wanted list</h2>
                 <div className="content">
                   <p>
                     list of most wanted criminals.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style3">
               <span className="image">
@@ -102,23 +103,23 @@ export default function Home() {
                 height={500}
                 src="/images/pic03.gif" alt="" />
               </span>
-              <a href="expenseapp">
+              <Link href="expenseapp">
                 <h2>expense list</h2>
                 <div className="content">
                   <p>
-                  a expense tracker app
+                  Link expense tracker app
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style4">
               <span className="image">
                 <Image 
                 width={500}
                 height={500}
-                src="/images/pic04.jpg" alt="" />
+                src="/images/setwinter.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Tempus</h2>
                 <div className="content">
                   <p>
@@ -126,16 +127,16 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style5">
               <span className="image">
                 <Image 
                 width={500}
                 height={500}
-                src="/images/pic05.jpg" alt="" />
+                src="/images/setsummer.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Aliquam</h2>
                 <div className="content">
                   <p>
@@ -143,16 +144,16 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style6">
               <span className="image">
                 <Image 
                 width={500}
                 height={500}
-                src="/images/pic06.jpg" alt="" />
+                src="/images/setday.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Veroeros</h2>
                 <div className="content">
                   <p>
@@ -160,16 +161,16 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style2">
               <span className="image">
                 <Image 
                 width={500}
                 height={500}
-                src="/images/pic07.jpg" alt="" />
+                src="/images/setfall.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Ipsum</h2>
                 <div className="content">
                   <p>
@@ -177,16 +178,16 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style3">
               <span className="image">
                 <Image 
                 width={500}
                 height={500}
-                src="/images/pic08.jpg" alt="" />
+                src="/images/setrain.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Dolor</h2>
                 <div className="content">
                   <p>
@@ -194,16 +195,16 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style1">
               <span className="image">
                 <Image 
                 width={500}
                 height={500}
-                src="/images/pic09.jpg" alt="" />
+                src="/images/redhall.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Nullam</h2>
                 <div className="content">
                   <p>
@@ -211,16 +212,16 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style5">
               <span className="image">
                 <Image
                 width={500}
                 height={500}
-                src="/images/pic10.jpg" alt="" />
+                src="/images/pinkrail.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Ultricies</h2>
                 <div className="content">
                   <p>
@@ -228,16 +229,16 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style6">
               <span className="image">
                 <Image
                  width={500}
                  height={500}
-                src="/images/pic11.jpg" alt="" />
+                src="/images/greentom.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Dictum</h2>
                 <div className="content">
                   <p>
@@ -245,16 +246,16 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
             <article className="style4">
               <span className="image">
                 <Image 
                 width={500}
                 height={500}
-                src="/images/pic12.jpg" alt="" />
+                src="/images/flowers.webp" alt="" />
               </span>
-              <a href="generic">
+              <Link href="generic">
                 <h2>Pretium</h2>
                 <div className="content">
                   <p>
@@ -262,7 +263,7 @@ export default function Home() {
                     et feugiat.
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
           </section>
         </div>

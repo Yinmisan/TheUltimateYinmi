@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from 'react';
+import Image from "next/image"
+import Link from "next/link"
 export default function Lists() {
 
   var [step, setStep] = useState(0);
 
   var names = ['pink panther', 'miku', 'anya','captian hardlock','Pengweno','Honda','Vegeta'];
-  var pictures = ['pink.gif','cry_miku.jpg', 'anya.png','hardlock.jpg','Penguin_bongos.gif','honda.jpg','vegeta.jpg'];
+  var pictures = ['/pink.gif','/cry_miku.jpg', '/anya.png','/hardlock.jpg','/Penguin_bongos.gif','/honda.jpg','/vegeta.jpg'];
 
   var currentName:string = names[step];
   var currentPicture:string = pictures[step];
@@ -26,12 +28,15 @@ export default function Lists() {
         <div className="inner">
            
           {/* Logo */}
-          <a href="/" className="logo">
+          <Link href="/" className="logo">
             <span className="symbol">
-              <img src="images/logo.svg" alt="" />
+              <Image 
+              width={500}
+              height={500}
+              src="images/logo.svg" alt="" />
             </span>
-            <span className="title">Main</span>
-          </a> 
+            <span className="title">Back</span>
+          </Link> 
           </div>
       </header>
       <div id="main">
@@ -44,9 +49,9 @@ export default function Lists() {
                 <button className="button primary" onClick={handleBack}><span>Back </span></button>
              </li>
             <li>
-              <a className="button fit">
+              <p className="button fit">
               {currentName}
-              </a>
+              </p>
             </li>
             <li>
                  <button className="button primary" onClick={handleNext}><span>Next</span></button>
@@ -59,7 +64,10 @@ export default function Lists() {
 
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic01.jpg" alt="" />
+                  <Image 
+                  width={500}
+                  height={500}
+                  src="/images/pic01.jpg" alt="" />
                 </span>
       
 </div>
@@ -67,9 +75,11 @@ export default function Lists() {
 
               <div className="col-4">
                 <span className="image fit">  
- <img
-      src={currentPicture}
-      alt={currentName}/>
+            <Image
+            width={500}
+            height={500}
+                    src={currentPicture}
+                    alt={currentName}/>
                   
                 </span>
               </div>    
@@ -77,7 +87,10 @@ export default function Lists() {
                 
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic02.jpg" alt="" />
+                  <Image
+                  width={500}
+                  height={500}
+                   src="/images/pic02.jpg" alt="" />
                 </span>
               </div>  
               

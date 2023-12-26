@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Image from "next/image"
+import Link from "next/link"
 
 const element = () => {
   return (<>
@@ -7,17 +8,20 @@ const element = () => {
     <header id="header">
       <div className="inner">
         {/* Logo */}
-        <a href="/" className="logo">
+        <Link href="/" className="logo">
           <span className="symbol">
-            <img src="images/logo.svg" alt="" />
+            <Image
+               width={500}
+               height={500}
+                src="images/logo.svg" alt="" />
           </span>
           <span className="title">back</span>
-        </a>
+        </Link>
         {/* Nav */}
         <nav>
           <ul>
             <li>
-              <a href="#menu">Menu</a>
+              <Link href="#menu">Menu</Link>
             </li>
           </ul>
         </nav>
@@ -28,19 +32,19 @@ const element = () => {
       <h2>Menu</h2>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <Link href="index.html">Home</Link>
         </li>
         <li>
-          <a href="generic.html">Ipsum veroeros</a>
+          <Link href="generic.html">Ipsum veroeros</Link>
         </li>
         <li>
-          <a href="generic.html">Tempus etiam</a>
+          <Link href="generic.html">Tempus etiam</Link>
         </li>
         <li>
-          <a href="generic.html">Consequat dolor</a>
+          <Link href="generic.html">Consequat dolor</Link>
         </li>
         <li>
-          <a href="elements.html">Elements</a>
+          <Link href="elements.html">Elements</Link>
         </li>
       </ul>
     </nav>
@@ -59,7 +63,7 @@ const element = () => {
             <code>
               for (;;) {"{"} ... {"}"}
             </code>
-            . Finally, <a href="#">this is a link</a>.
+            . Finally, <Link href="#">this is Link link</Link>.
           </p>
           <hr />
           <p>
@@ -127,46 +131,46 @@ const element = () => {
               <h3>Icons</h3>
               <ul className="icons">
                 <li>
-                  <a href="#" className="icon brands style1 fa-twitter">
+                  <Link href="#" className="icon brands style1 fa-twitter">
                     <span className="label">Twitter</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="icon brands style1 fa-facebook-f">
+                  <Link href="#" className="icon brands style1 fa-facebook-f">
                     <span className="label">Facebook</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="icon brands style1 fa-instagram">
+                  <Link href="#" className="icon brands style1 fa-instagram">
                     <span className="label">Instagram</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="icon brands style1 fa-github">
+                  <Link href="#" className="icon brands style1 fa-github">
                     <span className="label">Github</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className="icons">
                 <li>
-                  <a href="#" className="icon brands style2 fa-twitter">
+                  <Link href="#" className="icon brands style2 fa-twitter">
                     <span className="label">Twitter</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="icon brands style2 fa-facebook-f">
+                  <Link href="#" className="icon brands style2 fa-facebook-f">
                     <span className="label">Facebook</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="icon brands style2 fa-instagram">
+                  <Link href="#" className="icon brands style2 fa-instagram">
                     <span className="label">Instagram</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="icon brands style2 fa-github">
+                  <Link href="#" className="icon brands style2 fa-github">
                     <span className="label">Github</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -176,76 +180,76 @@ const element = () => {
             <div className="col-6 col-12-medium">
               <ul className="actions">
                 <li>
-                  <a href="#" className="button primary">
+                  <Link href="#" className="button primary">
                     Default
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="button">
+                  <Link href="#" className="button">
                     Default
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className="actions small">
                 <li>
-                  <a href="#" className="button primary small">
+                  <Link href="#" className="button primary small">
                     Small
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="button small">
+                  <Link href="#" className="button small">
                     Small
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className="actions stacked">
                 <li>
-                  <a href="#" className="button primary">
+                  <Link href="#" className="button primary">
                     Default
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="button">
+                  <Link href="#" className="button">
                     Default
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className="actions stacked">
                 <li>
-                  <a href="#" className="button primary small">
+                  <Link href="#" className="button primary small">
                     Small
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="button small">
+                  <Link href="#" className="button small">
                     Small
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="col-6 col-12-medium">
               <ul className="actions stacked">
                 <li>
-                  <a href="#" className="button primary fit">
+                  <Link href="#" className="button primary fit">
                     Default
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="button fit">
+                  <Link href="#" className="button fit">
                     Default
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className="actions stacked">
                 <li>
-                  <a href="#" className="button primary small fit">
+                  <Link href="#" className="button primary small fit">
                     Small
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="button small fit">
+                  <Link href="#" className="button small fit">
                     Small
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -350,82 +354,82 @@ const element = () => {
           <h3>Buttons</h3>
           <ul className="actions">
             <li>
-              <a href="#" className="button primary">
+              <Link href="#" className="button primary">
                 Primary
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button">
+              <Link href="#" className="button">
                 Default
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="actions">
             <li>
-              <a href="#" className="button large">
+              <Link href="#" className="button large">
                 Large
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button">
+              <Link href="#" className="button">
                 Default
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button small">
+              <Link href="#" className="button small">
                 Small
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="actions fit">
             <li>
-              <a href="#" className="button primary fit">
+              <Link href="#" className="button primary fit">
                 Fit
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button fit">
+              <Link href="#" className="button fit">
                 Fit
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button fit">
+              <Link href="#" className="button fit">
                 Fit
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="actions fit small">
             <li>
-              <a href="#" className="button primary fit small">
+              <Link href="#" className="button primary fit small">
                 Fit + Small
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button fit small">
+              <Link href="#" className="button fit small">
                 Fit + Small
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button fit small">
+              <Link href="#" className="button fit small">
                 Fit + Small
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="actions">
             <li>
-              <a href="#" className="button primary icon solid fa-download">
+              <Link href="#" className="button primary icon solid fa-download">
                 Icon
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button icon solid fa-upload">
+              <Link href="#" className="button icon solid fa-upload">
                 Icon
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="button icon solid fa-save">
+              <Link href="#" className="button icon solid fa-save">
                 Icon
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="actions">
@@ -496,7 +500,7 @@ const element = () => {
               </div>
               <div className="col-6 col-12-small">
                 <input type="checkbox" id="demo-copy" name="demo-copy" />
-                <label htmlFor="demo-copy">Email me a copy</label>
+                <label htmlFor="demo-copy">Email me Link copy</label>
               </div>
               <div className="col-6 col-12-small">
                 <input
@@ -505,7 +509,7 @@ const element = () => {
                   name="demo-human"
               
                 />
-                <label htmlFor="demo-human">Not a robot</label>
+                <label htmlFor="demo-human">Not Link robot</label>
               </div>
               <div className="col-12">
                 <textarea
@@ -541,52 +545,82 @@ const element = () => {
             <div className="row gtr-uniform">
               <div className="col-12">
                 <span className="image fit">
-                  <img src="images/pic13.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic13.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic01.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic01.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic02.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic02.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic03.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic03.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic03.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic03.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic01.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic01.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic02.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic02.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic02.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic02.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic03.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic03.jpg" alt="" />
                 </span>
               </div>
               <div className="col-4">
                 <span className="image fit">
-                  <img src="images/pic01.jpg" alt="" />
+                  <Image
+               width={500}
+               height={500}
+                src="/images/pic01.jpg" alt="" />
                 </span>
               </div>
             </div>
@@ -594,7 +628,10 @@ const element = () => {
           <h3>Left &amp; Right</h3>
           <p>
             <span className="image left">
-              <img src="images/pic14.jpg" alt="" />
+              <Image
+               width={500}
+               height={500}
+                src="/images/pic14.jpg" alt="" />
             </span>
             Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
             sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
@@ -618,7 +655,10 @@ const element = () => {
           </p>
           <p>
             <span className="image right">
-              <img src="images/pic15.jpg" alt="" />
+              <Image
+               width={500}
+               height={500}
+                src="/images/pic15.jpg" alt="" />
             </span>
             Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
             sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
@@ -681,51 +721,51 @@ const element = () => {
           <h2>Follow</h2>
           <ul className="icons">
             <li>
-              <a href="#" className="icon brands style2 fa-twitter">
+              <Link href="#" className="icon brands style2 fa-twitter">
                 <span className="label">Twitter</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="icon brands style2 fa-facebook-f">
+              <Link href="#" className="icon brands style2 fa-facebook-f">
                 <span className="label">Facebook</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="icon brands style2 fa-instagram">
+              <Link href="#" className="icon brands style2 fa-instagram">
                 <span className="label">Instagram</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="icon brands style2 fa-dribbble">
+              <Link href="#" className="icon brands style2 fa-dribbble">
                 <span className="label">Dribbble</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="icon brands style2 fa-github">
+              <Link href="#" className="icon brands style2 fa-github">
                 <span className="label">GitHub</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="icon brands style2 fa-500px">
+              <Link href="#" className="icon brands style2 fa-500px">
                 <span className="label">500px</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="icon solid style2 fa-phone">
+              <Link href="#" className="icon solid style2 fa-phone">
                 <span className="label">Phone</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="icon solid style2 fa-envelope">
+              <Link href="#" className="icon solid style2 fa-envelope">
                 <span className="label">Email</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </section>
         <ul className="copyright">
           <li>© Untitled. All rights reserved</li>
           <li>
-            Design: <a href="http://html5up.net">HTML5 UP</a>
+            Design: <Link href="http://html5up.net">HTML5 UP</Link>
           </li>
         </ul>
       </div>

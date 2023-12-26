@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from "@/components/contactForm";
+import Link from 'next/link';
 
 
 const contactform = () => {
@@ -9,12 +10,12 @@ const contactform = () => {
         <div className="inner">
            
           {/* Logo */}
-          <a href="/" className="logo">
+          <Link href="/" className="logo">
             <span className="symbol">
               <img src="images/logo.svg" alt="" />
             </span>
-            <span className="title">Main</span>
-          </a> 
+            <span className="title">back</span>
+          </Link> 
           </div>
       </header>
       <div className="inner">
