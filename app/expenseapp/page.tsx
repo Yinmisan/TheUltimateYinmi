@@ -1,4 +1,6 @@
 import ExpenseList  from "@/components/expenseList"
+import Image from "next/image"
+import Link from "next/link"
 export default function Expense() {
     
   return (<>
@@ -9,12 +11,15 @@ export default function Expense() {
   <header id="header">
     <div className="inner">
       {/* Logo */}
-      <a href="/" className="logo">
+      <Link href="/" className="logo">
         <span className="symbol">
-          <img src="images/logo.svg" alt="" />
+          <Image
+               width={500}
+               height={500} 
+               src="/images/logo.svg" alt="" />
         </span>
         <span className="title">Back</span>
-      </a>
+      </Link>
     </div>
   </header>
  

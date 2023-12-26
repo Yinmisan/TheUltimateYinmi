@@ -13,7 +13,7 @@ const element = () => {
             <Image
                width={500}
                height={500}
-                src="images/logo.svg" alt="" />
+                src="/images/logo.svg" alt="" />
           </span>
           <span className="title">back</span>
         </Link>

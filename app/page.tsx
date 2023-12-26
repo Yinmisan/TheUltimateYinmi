@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import Head from "next/head"
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
               <Image
                width={500}
                height={500}
-               src="images/logo.svg" alt="logo" />
+               src="/images/logo.svg" alt="logo" />
             </span>
             <span className="title">Main</span>
           </Link>
