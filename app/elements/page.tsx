@@ -4,7 +4,6 @@ import React from 'react';
 const element = () => {
   return (<>
   <div id="wrapper">
-    {/* Header */}
     <header id="header">
       <div className="inner">
         {/* Logo */}
@@ -12,7 +11,7 @@ const element = () => {
           <span className="symbol">
             <img src="images/logo.svg" alt="" />
           </span>
-          <span className="title">Phantom</span>
+          <span className="title">back</span>
         </a>
         {/* Nav */}
         <nav>
